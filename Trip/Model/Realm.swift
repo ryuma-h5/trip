@@ -16,6 +16,15 @@ final class PhotoLocation: Object {
     @objc dynamic var logtitude: Double = 0.0
     @objc dynamic var createdAt = Date(timeIntervalSince1970: 1)
     @objc dynamic var textMemo = ""
+    @objc dynamic var spa_mark1: Data = Data()
+    @objc dynamic var spa_mark2: Data = Data()
+    @objc dynamic var spa_mark3: Data = Data()
+    @objc dynamic var spa_mark4: Data = Data()
+    @objc dynamic var spa_mark5: Data = Data()
+    
+    
+    
+
     
 }
 

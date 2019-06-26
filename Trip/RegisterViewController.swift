@@ -33,6 +33,26 @@ class RegisterViewController: UIViewController, UINavigationControllerDelegate, 
         guard let _userLocation = userLocation else { return }
         latitude = _userLocation.coordinate.latitude
         logtitude = _userLocation.coordinate.longitude
+        
+        favo1Button.setImage(favoImage, for: .normal)
+        favo1Button.setImage(favoedImage, for: .selected)
+        favo2Button.setImage(favoImage, for: .normal)
+        favo2Button.setImage(favoedImage, for: .selected)
+        favo3Button.setImage(favoImage, for: .normal)
+        favo3Button.setImage(favoedImage, for: .selected)
+        favo4Button.setImage(favoImage, for: .normal)
+        favo4Button.setImage(favoedImage, for: .selected)
+        favo5Button.setImage(favoImage, for: .normal)
+        favo5Button.setImage(favoedImage, for: .selected)
+        
+        favo1Button.isSelected = false
+        favo2Button.isSelected = false
+        favo3Button.isSelected = false
+        favo4Button.isSelected = false
+        favo5Button.isSelected = false
+        
+        self.navigationItem.title = "record"
+        self.navigationItem.backBarButtonItem = UIBarButtonItem()
     }
     
     //ここでCLLocationManagerを利用して、userLocationを取得している
@@ -84,6 +104,42 @@ class RegisterViewController: UIViewController, UINavigationControllerDelegate, 
         photoLocation.logtitude = logtitude
         
         
+        //温泉評価機能
+        //わざわざ条件分岐させる必要もなくて、そのままグレー、赤温泉マークをRealmにセットして、そのままDeatail で画像表示をすれば良いのか
+        if favoNumber == 1 {
+            photoLocation.spa_mark1 = favoedImage.pngData()!
+            photoLocation.spa_mark2 = favoImage.pngData()!
+            photoLocation.spa_mark3 = favoImage.pngData()!
+            photoLocation.spa_mark4 = favoImage.pngData()!
+            photoLocation.spa_mark5 = favoImage.pngData()!
+        } else if favoNumber == 2 {
+            photoLocation.spa_mark1 = favoedImage.pngData()!
+            photoLocation.spa_mark2 = favoedImage.pngData()!
+            photoLocation.spa_mark3 = favoImage.pngData()!
+            photoLocation.spa_mark4 = favoImage.pngData()!
+            photoLocation.spa_mark5 = favoImage.pngData()!
+            
+        } else if favoNumber == 3 {
+            photoLocation.spa_mark1 = favoedImage.pngData()!
+            photoLocation.spa_mark2 = favoedImage.pngData()!
+            photoLocation.spa_mark3 = favoedImage.pngData()!
+            photoLocation.spa_mark4 = favoImage.pngData()!
+            photoLocation.spa_mark5 = favoImage.pngData()!
+        } else if favoNumber == 4 {
+            photoLocation.spa_mark1 = favoedImage.pngData()!
+            photoLocation.spa_mark2 = favoedImage.pngData()!
+            photoLocation.spa_mark3 = favoedImage.pngData()!
+            photoLocation.spa_mark4 = favoedImage.pngData()!
+            photoLocation.spa_mark5 = favoImage.pngData()!
+        } else if favoNumber == 5 {
+            photoLocation.spa_mark1 = favoedImage.pngData()!
+            photoLocation.spa_mark2 = favoedImage.pngData()!
+            photoLocation.spa_mark3 = favoedImage.pngData()!
+            photoLocation.spa_mark4 = favoedImage.pngData()!
+            photoLocation.spa_mark5 = favoedImage.pngData()!
+        }
+        
+        
         guard let _selectedImage = photo.image else {
             print("画像を選択してください")
             return
@@ -93,6 +149,8 @@ class RegisterViewController: UIViewController, UINavigationControllerDelegate, 
         try! realm.write {
             realm.add(photoLocation)
         }
+        
+        dismiss(animated: true, completion: nil)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -104,6 +162,106 @@ class RegisterViewController: UIViewController, UINavigationControllerDelegate, 
     
     @IBAction func back() {
         dismiss(animated: true, completion: nil)
+    }
+    
+    //温泉評価
+    @IBOutlet var favo1Button: UIButton!
+    @IBOutlet var favo2Button: UIButton!
+    @IBOutlet var favo3Button: UIButton!
+    @IBOutlet var favo4Button: UIButton!
+    @IBOutlet var favo5Button: UIButton!
+    var favoNumber: Int = 0
+    let favoedImage: UIImage = UIImage(named: "spa_mark.png")!
+    let favoImage:UIImage = UIImage(named: "spa_unselected.png")!
+    
+    @IBAction func tapped1() {
+        if favoNumber == 1 {
+            favo1Button.isSelected = false
+            favo2Button.isSelected = false
+            favo3Button.isSelected = false
+            favo4Button.isSelected = false
+            favo5Button.isSelected = false
+            favoNumber = 0
+        } else {
+            favo1Button.isSelected = true
+            favo2Button.isSelected = false
+            favo3Button.isSelected = false
+            favo4Button.isSelected = false
+            favo5Button.isSelected = false
+            favoNumber = 1
+        }
+    }
+    
+    @IBAction func tapped2() {
+        if favoNumber == 2 {
+            favo1Button.isSelected = false
+            favo2Button.isSelected = false
+            favo3Button.isSelected = false
+            favo4Button.isSelected = false
+            favo5Button.isSelected = false
+            favoNumber = 0
+        } else {
+            favo1Button.isSelected = true
+            favo2Button.isSelected = true
+            favo3Button.isSelected = false
+            favo4Button.isSelected = false
+            favo5Button.isSelected = false
+            favoNumber = 2
+        }
+    }
+    
+    @IBAction func tapped3() {
+        if favoNumber == 3 {
+            favo1Button.isSelected = false
+            favo2Button.isSelected = false
+            favo3Button.isSelected = false
+            favo4Button.isSelected = false
+            favo5Button.isSelected = false
+            favoNumber = 0
+        } else {
+            favo1Button.isSelected = true
+            favo2Button.isSelected = true
+            favo3Button.isSelected = true
+            favo4Button.isSelected = false
+            favo5Button.isSelected = false
+            favoNumber = 3
+        }
+    }
+    
+    @IBAction func tapped4() {
+        if favoNumber == 4 {
+            favo1Button.isSelected = false
+            favo2Button.isSelected = false
+            favo3Button.isSelected = false
+            favo4Button.isSelected = false
+            favo5Button.isSelected = false
+            favoNumber = 0
+        } else {
+            favo1Button.isSelected = true
+            favo2Button.isSelected = true
+            favo3Button.isSelected = true
+            favo4Button.isSelected = true
+            favo5Button.isSelected = false
+            favoNumber = 4
+        }
+    }
+    
+    @IBAction func tapped5() {
+        if favoNumber == 5 {
+            favo1Button.isSelected = false
+            favo2Button.isSelected = false
+            favo3Button.isSelected = false
+            favo4Button.isSelected = false
+            favo5Button.isSelected = false
+            favoNumber = 0
+        } else {
+            favo1Button.isSelected = true
+            favo2Button.isSelected = true
+            favo3Button.isSelected = true
+            favo4Button.isSelected = true
+            favo5Button.isSelected = true
+            favoNumber = 5
+        }
     }
     
 }
