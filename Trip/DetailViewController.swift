@@ -23,6 +23,9 @@ class DetailViewController: UIViewController, UIImagePickerControllerDelegate {
     @IBOutlet var spa4Mark: UIImageView!
     @IBOutlet var spa5Mark: UIImageView!
     
+    //日付表示
+    @IBOutlet var dateLabel: UILabel!
+    
     
     
 
@@ -49,6 +52,9 @@ class DetailViewController: UIViewController, UIImagePickerControllerDelegate {
         
         let spa5MarkFromRealm = detaliArray[number].spa_mark5
         spa5Mark.image = UIImage(data: spa5MarkFromRealm)
+        
+        let date = detaliArray[number].date
+        dateLabel.text = String(date)
         
         
     

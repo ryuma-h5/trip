@@ -19,10 +19,13 @@ class RegisterViewController: UIViewController, UINavigationControllerDelegate, 
     var logtitude: CLLocationDegrees!
     var locationManager = CLLocationManager()
     var userLocation: CLLocation!
-
+    
+    //日付表示用
+    @IBOutlet var dateLabel: UILabel!
+    
     let realm = try! Realm()
     let photoLocation = PhotoLocation()
-//    let textMemo = PhotoLocation()
+    //    let textMemo = PhotoLocation()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,8 +56,17 @@ class RegisterViewController: UIViewController, UINavigationControllerDelegate, 
         
         self.navigationItem.title = "record"
         self.navigationItem.backBarButtonItem = UIBarButtonItem()
+        
+        //現在日時の取得
+        let now = NSDate()
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy/MM/dd HH:mm"
+        dateLabel.text = String(dateFormatter.string(from: now as Date))
+        
     }
     
+ 
     //ここでCLLocationManagerを利用して、userLocationを取得している
     func setUpLacation() {
         locationManager.requestWhenInUseAuthorization()
@@ -94,15 +106,21 @@ class RegisterViewController: UIViewController, UINavigationControllerDelegate, 
     
     
     
-//    func locationManager(didUpdateLocations locations: CLLocation) {
-//        latitude = (location?.coordinate.latitude)!
-//        logtitude = (location?.coordinate.longitude)
-//    }
+    //    func locationManager(didUpdateLocations locations: CLLocation) {
+    //        latitude = (location?.coordinate.latitude)!
+    //        logtitude = (location?.coordinate.longitude)
+    //    }
     
     @IBAction func up() {
         photoLocation.latitude = latitude
         photoLocation.logtitude = logtitude
         
+        
+        //現在日時の取得
+        let now = NSDate()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy/MM/dd HH:mm"
+        photoLocation.date = String(dateFormatter.string(from: now as Date))
         
         //温泉評価機能
         //わざわざ条件分岐させる必要もなくて、そのままグレー、赤温泉マークをRealmにセットして、そのままDeatail で画像表示をすれば良いのか
@@ -263,5 +281,6 @@ class RegisterViewController: UIViewController, UINavigationControllerDelegate, 
             favoNumber = 5
         }
     }
+    
     
 }

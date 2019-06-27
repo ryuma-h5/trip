@@ -21,7 +21,8 @@ final class PhotoLocation: Object {
     @objc dynamic var spa_mark3: Data = Data()
     @objc dynamic var spa_mark4: Data = Data()
     @objc dynamic var spa_mark5: Data = Data()
-    
+    @objc dynamic var date: String = String()
+
     
     
 

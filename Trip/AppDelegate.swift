@@ -18,11 +18,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        
+        
         // ここから追加
+        //realmを新しく追加する度に,とりあえずschemaVersionを上げていけば良い
         let config = Realm.Configuration(
-            schemaVersion: 1,
+            schemaVersion: 3,
             migrationBlock: { migration, oldSchemaVersion in
-                if (oldSchemaVersion < 1) {}
+                if (oldSchemaVersion < 3) {
+                }
+                
         })
         Realm.Configuration.defaultConfiguration = config
         
@@ -50,6 +55,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+
+    
 
 
 }
