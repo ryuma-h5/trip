@@ -14,6 +14,23 @@
 		A20A95412296B24700CB7D83 /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20A95402296B24700CB7D83 /* CustomAnnotation.swift */; };
 		A20AEB2522938B4B009C389C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20AEB2422938B4B009C389C /* DetailViewController.swift */; };
 		A20BCA80228EAE1F0093D3B6 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20BCA7F228EAE1F0093D3B6 /* RegisterViewController.swift */; };
+		A20EBB9C22C55C1B00322199 /* spa_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A20EBB9B22C55C1A00322199 /* spa_icon.png */; };
+		A20EBBB222C560F600322199 /* Icon-App-20x20@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = A20EBBA322C560F400322199 /* Icon-App-20x20@1x.png */; };
+		A20EBBB322C560F600322199 /* Icon-App-76x76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A20EBBA422C560F400322199 /* Icon-App-76x76@2x.png */; };
+		A20EBBB422C560F600322199 /* Icon-App-83.5x83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A20EBBA522C560F400322199 /* Icon-App-83.5x83.5@2x.png */; };
+		A20EBBB522C560F600322199 /* Icon-App-29x29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A20EBBA622C560F400322199 /* Icon-App-29x29@3x.png */; };
+		A20EBBB622C560F600322199 /* Icon-App-60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A20EBBA722C560F400322199 /* Icon-App-60x60@3x.png */; };
+		A20EBBB722C560F600322199 /* Icon-App-20x20@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A20EBBA822C560F400322199 /* Icon-App-20x20@3x.png */; };
+		A20EBBB822C560F600322199 /* Icon-App-40x40@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = A20EBBA922C560F400322199 /* Icon-App-40x40@1x.png */; };
+		A20EBBB922C560F600322199 /* Icon-App-40x40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A20EBBAA22C560F500322199 /* Icon-App-40x40@3x.png */; };
+		A20EBBBA22C560F600322199 /* Icon-App-40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A20EBBAB22C560F500322199 /* Icon-App-40x40@2x.png */; };
+		A20EBBBB22C560F600322199 /* ItunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A20EBBAC22C560F500322199 /* ItunesArtwork@2x.png */; };
+		A20EBBBC22C560F600322199 /* Icon-App-29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A20EBBAD22C560F500322199 /* Icon-App-29x29@2x.png */; };
+		A20EBBBD22C560F600322199 /* Icon-App-29x29@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = A20EBBAE22C560F500322199 /* Icon-App-29x29@1x.png */; };
+		A20EBBBE22C560F600322199 /* Icon-App-20x20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A20EBBAF22C560F500322199 /* Icon-App-20x20@2x.png */; };
+		A20EBBBF22C560F600322199 /* Icon-App-76x76@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = A20EBBB022C560F600322199 /* Icon-App-76x76@1x.png */; };
+		A20EBBC022C560F600322199 /* Icon-App-60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A20EBBB122C560F600322199 /* Icon-App-60x60@2x.png */; };
+		A20EBBC222C5648400322199 /* demo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A20EBBC122C5648400322199 /* demo.jpg */; };
 		A2165882228437270084C296 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2165881228437270084C296 /* AppDelegate.swift */; };
 		A2165884228437270084C296 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2165883228437270084C296 /* ViewController.swift */; };
 		A2165887228437270084C296 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2165885228437270084C296 /* Main.storyboard */; };
@@ -34,6 +51,23 @@
 		A20A95402296B24700CB7D83 /* CustomAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
 		A20AEB2422938B4B009C389C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		A20BCA7F228EAE1F0093D3B6 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		A20EBB9B22C55C1A00322199 /* spa_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spa_icon.png; sourceTree = "<group>"; };
+		A20EBBA322C560F400322199 /* Icon-App-20x20@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@1x.png"; sourceTree = "<group>"; };
+		A20EBBA422C560F400322199 /* Icon-App-76x76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-76x76@2x.png"; sourceTree = "<group>"; };
+		A20EBBA522C560F400322199 /* Icon-App-83.5x83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-83.5x83.5@2x.png"; sourceTree = "<group>"; };
+		A20EBBA622C560F400322199 /* Icon-App-29x29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@3x.png"; sourceTree = "<group>"; };
+		A20EBBA722C560F400322199 /* Icon-App-60x60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-60x60@3x.png"; sourceTree = "<group>"; };
+		A20EBBA822C560F400322199 /* Icon-App-20x20@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@3x.png"; sourceTree = "<group>"; };
+		A20EBBA922C560F400322199 /* Icon-App-40x40@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@1x.png"; sourceTree = "<group>"; };
+		A20EBBAA22C560F500322199 /* Icon-App-40x40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@3x.png"; sourceTree = "<group>"; };
+		A20EBBAB22C560F500322199 /* Icon-App-40x40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@2x.png"; sourceTree = "<group>"; };
+		A20EBBAC22C560F500322199 /* ItunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ItunesArtwork@2x.png"; sourceTree = "<group>"; };
+		A20EBBAD22C560F500322199 /* Icon-App-29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@2x.png"; sourceTree = "<group>"; };
+		A20EBBAE22C560F500322199 /* Icon-App-29x29@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@1x.png"; sourceTree = "<group>"; };
+		A20EBBAF22C560F500322199 /* Icon-App-20x20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@2x.png"; sourceTree = "<group>"; };
+		A20EBBB022C560F600322199 /* Icon-App-76x76@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-76x76@1x.png"; sourceTree = "<group>"; };
+		A20EBBB122C560F600322199 /* Icon-App-60x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-60x60@2x.png"; sourceTree = "<group>"; };
+		A20EBBC122C5648400322199 /* demo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = demo.jpg; sourceTree = "<group>"; };
 		A216587E228437270084C296 /* Trip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2165881228437270084C296 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2165883228437270084C296 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +114,8 @@
 		A2165880228437270084C296 /* Trip */ = {
 			isa = PBXGroup;
 			children = (
+				A20EBBC122C5648400322199 /* demo.jpg */,
+				A20EBB9B22C55C1A00322199 /* spa_icon.png */,
 				A2069E1122C23DC000D8C1A0 /* spa_mark.png */,
 				A2069E1022C23DBF00D8C1A0 /* spa_unselected.png */,
 				A216589322843C430084C296 /* Model */,
@@ -87,6 +123,21 @@
 				A2165883228437270084C296 /* ViewController.swift */,
 				A2165885228437270084C296 /* Main.storyboard */,
 				A2165888228437280084C296 /* Assets.xcassets */,
+				A20EBBA322C560F400322199 /* Icon-App-20x20@1x.png */,
+				A20EBBAF22C560F500322199 /* Icon-App-20x20@2x.png */,
+				A20EBBA822C560F400322199 /* Icon-App-20x20@3x.png */,
+				A20EBBAE22C560F500322199 /* Icon-App-29x29@1x.png */,
+				A20EBBAD22C560F500322199 /* Icon-App-29x29@2x.png */,
+				A20EBBA622C560F400322199 /* Icon-App-29x29@3x.png */,
+				A20EBBA922C560F400322199 /* Icon-App-40x40@1x.png */,
+				A20EBBAB22C560F500322199 /* Icon-App-40x40@2x.png */,
+				A20EBBAA22C560F500322199 /* Icon-App-40x40@3x.png */,
+				A20EBBB122C560F600322199 /* Icon-App-60x60@2x.png */,
+				A20EBBA722C560F400322199 /* Icon-App-60x60@3x.png */,
+				A20EBBB022C560F600322199 /* Icon-App-76x76@1x.png */,
+				A20EBBA422C560F400322199 /* Icon-App-76x76@2x.png */,
+				A20EBBA522C560F400322199 /* Icon-App-83.5x83.5@2x.png */,
+				A20EBBAC22C560F500322199 /* ItunesArtwork@2x.png */,
 				A216588A228437280084C296 /* LaunchScreen.storyboard */,
 				A2165896228441420084C296 /* MapViewController.swift */,
 				A20A95402296B24700CB7D83 /* CustomAnnotation.swift */,
@@ -183,11 +234,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A20EBBC222C5648400322199 /* demo.jpg in Resources */,
+				A20EBBB922C560F600322199 /* Icon-App-40x40@3x.png in Resources */,
+				A20EBB9C22C55C1B00322199 /* spa_icon.png in Resources */,
+				A20EBBBF22C560F600322199 /* Icon-App-76x76@1x.png in Resources */,
+				A20EBBBD22C560F600322199 /* Icon-App-29x29@1x.png in Resources */,
+				A20EBBB222C560F600322199 /* Icon-App-20x20@1x.png in Resources */,
+				A20EBBB322C560F600322199 /* Icon-App-76x76@2x.png in Resources */,
+				A20EBBC022C560F600322199 /* Icon-App-60x60@2x.png in Resources */,
+				A20EBBB622C560F600322199 /* Icon-App-60x60@3x.png in Resources */,
 				A216588C228437280084C296 /* LaunchScreen.storyboard in Resources */,
+				A20EBBBA22C560F600322199 /* Icon-App-40x40@2x.png in Resources */,
+				A20EBBB522C560F600322199 /* Icon-App-29x29@3x.png in Resources */,
+				A20EBBBC22C560F600322199 /* Icon-App-29x29@2x.png in Resources */,
+				A20EBBB422C560F600322199 /* Icon-App-83.5x83.5@2x.png in Resources */,
 				A20743F02294EA5E00B47B93 /* icon.png in Resources */,
+				A20EBBB722C560F600322199 /* Icon-App-20x20@3x.png in Resources */,
+				A20EBBB822C560F600322199 /* Icon-App-40x40@1x.png in Resources */,
 				A2069E1222C23DC000D8C1A0 /* spa_unselected.png in Resources */,
 				A2165889228437280084C296 /* Assets.xcassets in Resources */,
+				A20EBBBB22C560F600322199 /* ItunesArtwork@2x.png in Resources */,
 				A2165887228437270084C296 /* Main.storyboard in Resources */,
+				A20EBBBE22C560F600322199 /* Icon-App-20x20@2x.png in Resources */,
 				A2069E1322C23DC000D8C1A0 /* spa_mark.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

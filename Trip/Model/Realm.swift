@@ -22,6 +22,13 @@ final class PhotoLocation: Object {
     @objc dynamic var spa_mark4: Data = Data()
     @objc dynamic var spa_mark5: Data = Data()
     @objc dynamic var date: String = String()
+    @objc dynamic var custom_button1: Int = Int()
+    @objc dynamic var custom_button2: Int = Int()
+    @objc dynamic var custom_button3: Int = Int()
+    @objc dynamic var custom_button4: Int = Int()
+    @objc dynamic var custom_button5: Int = Int()
+    @objc dynamic var custom_button6: Int = Int()
+    
 
     
     

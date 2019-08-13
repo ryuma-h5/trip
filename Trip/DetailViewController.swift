@@ -23,6 +23,20 @@ class DetailViewController: UIViewController, UIImagePickerControllerDelegate {
     @IBOutlet var spa4Mark: UIImageView!
     @IBOutlet var spa5Mark: UIImageView!
     
+    @IBOutlet var cus1Button: UIButton!
+    @IBOutlet var cus2Button: UIButton!
+    @IBOutlet var cus3Button: UIButton!
+    @IBOutlet var cus4Button: UIButton!
+    @IBOutlet var cus5Button: UIButton!
+    @IBOutlet var cus6Button: UIButton!
+    
+    var cus1Number: Int!
+    var cus2Number: Int!
+    var cus3Number: Int!
+    var cus4Number: Int!
+    var cus5Number: Int!
+    var cus6Number: Int!
+    
     //日付表示
     @IBOutlet var dateLabel: UILabel!
     
@@ -56,16 +70,36 @@ class DetailViewController: UIViewController, UIImagePickerControllerDelegate {
         let date = detaliArray[number].date
         dateLabel.text = String(date)
         
+        cus1Number = detaliArray[number].custom_button1
+        cus2Number = detaliArray[number].custom_button2
+        cus3Number = detaliArray[number].custom_button3
+        cus4Number = detaliArray[number].custom_button4
+        cus5Number = detaliArray[number].custom_button5
+        cus6Number = detaliArray[number].custom_button6
         
     
+        if cus1Number == 11 {
+            cus1Button.isSelected = true
+        }
+        if cus2Number == 22 {
+//            cus2Button.backgroundColor = UIColor.blue
+            cus2Button.isSelected = true
+        }
+        if cus3Number == 33 {
+            cus3Button.isSelected = true
+        }
+        if cus4Number == 44 {
+            cus4Button.isSelected = true
+        }
+        if cus5Number == 55 {
+            cus5Button.isSelected = true
+        }
+        if cus6Number == 66 {
+            cus6Button.isSelected = true
+        }
         
-    
-       
         
-//        let results = realm.objects(textMemo.self)
         
-
-        // Do any additional setup after loading the view.
     }
     
 
@@ -81,6 +115,13 @@ class DetailViewController: UIViewController, UIImagePickerControllerDelegate {
     
     @IBAction func back() {
 //        dismiss(animated: true, completion: nil)
+        navigationController?.popToRootViewController(animated: true)
+    }
+    
+    @IBAction func delete() {
+        try! realm.write {
+            realm.delete(detaliArray[number])
+        }
         navigationController?.popToRootViewController(animated: true)
     }
 
